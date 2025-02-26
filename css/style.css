@@ -57,7 +57,15 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
+/*Ed - head*/
+head {
+    display: flex;
+    justify-content: center;
+}
+.entête {
+    position: absolute;
+    top: 0;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -120,7 +128,27 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* Debut codage Ed*/
 
+.Par-ligne-de-3-hebergements {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.proposition-des-4-Activités {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box; 
+}
+
+Premiere-ligne-de-3-hebergements
 .choix-dans-espace-menu {
     color: red;
 }
