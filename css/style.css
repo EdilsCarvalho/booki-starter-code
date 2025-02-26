@@ -16,13 +16,15 @@
 body {
     display: flex;
     justify-content: center;
+    
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 30 50px;
     box-sizing: border-box;
+    height: fit-content;
 }
 
 a {
@@ -62,10 +64,26 @@ head {
     display: flex;
     justify-content: center;
 }
+
 .entête {
     position: absolute;
     top: 0;
 }
+.choix-dans-espace-menu{
+    flex-direction: row;
+}
+.proposition-des-4-Filtres {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.Filtre1234 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
