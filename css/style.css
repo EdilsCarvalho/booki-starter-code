@@ -16,15 +16,15 @@
 body {
     display: flex;
     justify-content: center;
-    
+border-top-width: 20%;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 30 50px;
+    padding: 0 50px;
     box-sizing: border-box;
-    height: fit-content;
+    
 }
 
 a {
@@ -33,8 +33,9 @@ a {
 }
 
 .section-title {
-    margin: 0;
     font-size: 22px;
+    width: 1280;
+    height: 30.018735885620117;
 }
 
 .card {
@@ -65,10 +66,7 @@ head {
     justify-content: center;
 }
 
-.entête {
-    position: absolute;
-    top: 0;
-}
+
 .choix-dans-espace-menu{
     flex-direction: row;
 }
@@ -77,11 +75,15 @@ head {
     flex-direction: row;
 
 
+
 }
 .Filtre1234 {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
+    border-radius: 20px;
+    box-sizing: border-box.
+    background-color: var(--main-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
@@ -157,16 +159,24 @@ head {
     box-sizing: border-box;
 }
 
+.Activities-in-town {
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box; 
+    background-color: var(--main-bg-color);
+}
 .proposition-des-4-Activités {
-    width: 67%;
-    padding-left: 15px;
+    width:fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box; 
+    border-radius: 20px;
 }
 
-Premiere-ligne-de-3-hebergements
 .choix-dans-espace-menu {
     color: red;
 }
