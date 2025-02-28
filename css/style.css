@@ -82,7 +82,7 @@ head {
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
-    box-sizing: border-box.
+    box-sizing: border-box;
     background-color: var(--main-bg-color);
 }
 
