@@ -83,6 +83,12 @@ a {
 
 }
 
+.bas-de-page {
+    flex-direction: row;
+    display: flex;
+    gap: 50px;
+    }
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
