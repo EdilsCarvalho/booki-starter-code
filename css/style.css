@@ -60,8 +60,14 @@ a {
 }
 /*Ed - head*/
 
+.logo-du-site {
+    /*margin-left: 0%;*/
+}
 .choix-dans-espace-menu{
     flex-direction: row;
+    box-sizing:content-box;
+    background-color: #0065FC;
+
 }
 .proposition-des-4-Filtres {
     display: flex;
@@ -154,12 +160,13 @@ a {
 /* Debut codage Ed*/
 
 
+/*
 .entête{
 display: flex;
 flex-direction:row;
 
 }
-
+*/
 
 .Par-ligne-de-3-hebergements {
     width: 67%;
