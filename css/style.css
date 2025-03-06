@@ -65,27 +65,39 @@ a {
 }
 .choix-dans-espace-menu{
     flex-direction: row;
-    box-sizing:content-box;
     background-color: #0065FC;
+    
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    gap: 10px;
 
 }
 .proposition-des-4-Filtres {
     display: flex;
     flex-direction: row;
-    padding: 3px;
-    justify-items: flex-start
-
+    position: absolute;
+    width: 80%;
+.proposition-des-4-Filtres img{
+    width: 22px;
+    height: 22px;
+}
+    
 }
 .Filtre1234 {
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background-color: var(--main-bg-color);
-    padding: 3px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: yellow;
+    width: 173;
+    height: 50;
+    gap: 50px;
+    padding-top: 4px;
+    padding-right: 19px;
+    padding-bottom: 4px;
+    padding-left: 19px;
+    border-radius: 25px;
+    border-width: 2px;
+    
 
 }
 
