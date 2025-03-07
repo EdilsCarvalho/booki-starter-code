@@ -78,6 +78,7 @@ a {
     flex-direction: row;
     position: absolute;
     width: 80%;
+
 .proposition-des-4-Filtres img{
     width: 22px;
     height: 22px;
@@ -87,6 +88,7 @@ a {
 .Filtre1234 {
     flex-direction: row;
     display: flex;
+ 
     background-color: yellow;
     width: 173;
     height: 50;
@@ -101,12 +103,17 @@ a {
 
 }
 
+.afficher-plus{
+ 
+}
 .bas-de-page {
     flex-direction: row;
     display: flex;
     gap: 50px;
     }
 
+
+  <!-- -->  
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -179,7 +186,11 @@ flex-direction:row;
 
 }
 */
+.proposition-des-6-hebergements{
+flex-direction: column;
+display: flex;
 
+}
 .Par-ligne-de-3-hebergements {
     width: 67%;
     padding-left: 15px;
@@ -187,19 +198,33 @@ flex-direction:row;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    margin: auto;
+    left: 0;
 
 }
+.Par-ligne-de-3-hebergements img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
 
 .Activities-in-town {
+    
     padding: 30px;
     border-radius: 20px;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box; 
     background-color: var(--main-bg-color);
 }
+
+
 .proposition-des-4-Activités {
     width:fit-content;
     display: flex;
@@ -207,9 +232,15 @@ flex-direction:row;
     justify-content: space-between;
     box-sizing: border-box; 
     border-radius: 20px;
-    margin: auto;
-}
 
+    left: 0;
+}
+.proposition-des-4-Activités img{
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 .choix-dans-espace-menu {
     color: red;
 }
