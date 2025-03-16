@@ -163,6 +163,13 @@ body {
     flex-direction: column;
     gap: 35px;
 }
+/*MAIN GAP INTERVENTION EDILSON*/
+.main {
+    gap: 30px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
 
 a {
     color: inherit;
@@ -301,7 +308,7 @@ a {
     gap: 30px;
 }
 
-.hebergements card2 {
+.hebergements .card2 {
     justify-content: space-between;
     width: fit-content;
 }
@@ -330,7 +337,7 @@ a {
 .Activities-in-town {
     padding: 30px;
     border-radius: 20px;
-    width: 1340;
+    width: 1340px;
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -341,22 +348,37 @@ a {
 .proposition-des-4-Activités {
     background-color: blueviolet;
     flex-direction: row;
-    width: 1280;
-    height: 439;
+    height: 439px;
+}
+.card3{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 300px;
 }
 .proposition-des-4-Activités img {
-    height: 136px;
+/*    height: 136px;
+    width: 439px;
+*/
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+.proposition-des-4-Activités .card3 {
+    display: flex;
+    flex-direction: row;
+   
+    width: 1230px;
+    height: fit-content;
+}
+
 .Activities-in-town .proposition-des-4-Activités{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 'fit-content';
 }
-
 
 /* */
 
