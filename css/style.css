@@ -156,7 +156,7 @@ body {
 
 .main-container {
     width: 100%;
-    /*    max-width: 1440px; */
+    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
     display: flex;
@@ -197,8 +197,6 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
-
 /****** Premier gros Bloc du body avec deux encadrés :  Hebergements     ET     Hebergements And Populaires ***********/
 
 /****** Hebergements And Populaires ***********/
@@ -229,11 +227,12 @@ a {
     height: 55%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
+}*/
 .card img{
     object-fit: cover;
 }
-*/
+/**/
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -283,7 +282,6 @@ a {
 .proposition-des-6-hebergements {
     flex-direction: column;
     display: flex;
-    gap: 30px;
 }
 
 .card2 {
@@ -328,53 +326,39 @@ a {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
+/****** Activities_in-town ***********/
 .Activities-in-town {
     padding: 30px;
     border-radius: 20px;
-    width: 97%;
-    height: fit-content;
+    width: 1340;
+    height: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: var(--main-bg-color);
+    gap: 30px;
 }
 
 .proposition-des-4-Activités {
     background-color: blueviolet;
-    width: fit-content;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    border-radius: 20px;
-    left: 0;
-    gap: 40px;
+    width: 1280;
+    height: 439;
 }
-
 .proposition-des-4-Activités img {
-    width: 100%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-.proposition-des-4-Activités a{
-    justify-content: space-between;
-}
-
-/****** Activities_in-town ***********/
-/*
-.Activities-in-town {
-    display: flex;
-    flex-direction: column;
-}
-
-.proposition-des-4-Activités {
+.Activities-in-town .proposition-des-4-Activités{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
 }
-*/
+
+
+/* */
 
 /****** footer ***********/
 .bas-de-page {
@@ -384,7 +368,6 @@ a {
     background-color: #F2F2F2;
     width: 1340;
     height: 163;
-
 }
 
 
