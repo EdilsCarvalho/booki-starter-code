@@ -6,16 +6,13 @@
     height: 79px;
     /*background-color: yellow;*/
 }
-
 .app-bar img {
     width: 61.089656829833984px;
     height: 19px;
 }
-
 .app-bar a {
     width: 20%;
 }
-
 .app-bar-nav {
     width: 20%;
     display: flex;
@@ -139,21 +136,17 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
 .fa-solid {
     color: var(--main-color);
 }
-
 body {
     border-top-width: 20%;
 }
-
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -286,6 +279,7 @@ a {
     margin-bottom: 5px;
 }
 
+/****** proposition-des-6-hebergements ***********/
 .proposition-des-6-hebergements {
     flex-direction: column;
     display: flex;
@@ -295,9 +289,8 @@ a {
     background-color: yellow;
     border-radius: 20px;
     padding: 5px;
-    width: 250.3333282470703;
+    width: 250.3;
     height: 207.25;
-    gap: 4px;
     padding-bottom: 15px;
 }
 
@@ -307,26 +300,24 @@ a {
     justify-content: space-between;
     gap: 30px;
 }
-
+/*
 .hebergements .card2 {
     justify-content: space-between;
     width: fit-content;
-}
+}*/
 
 .card2 img {
     object-fit: cover;
 }
-
-/*
-.Par-ligne-de-3-hebergements a {
+.hebergements .Par-ligne-de-3-hebergements {
     display: flex;
-    width: 250.3333282470703;
-    height: 207.25;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
     gap: 4px;
     padding-bottom: 15px;
     border-radius: 20px;
 }
-*/
 .Par-ligne-de-3-hebergements img {
     width: 100%;
     height: 136px;
@@ -335,7 +326,6 @@ a {
 }
 /****** Activities_in-town ***********/
 .Activities-in-town {
-    padding: 30px;
     border-radius: 20px;
     width: 1340px;
     height: 20%;
@@ -348,39 +338,47 @@ a {
 .proposition-des-4-Activités {
     background-color: blueviolet;
     flex-direction: row;
-    height: 439px;
+    justify-content: space-between;
 }
 .card3{
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
-    width: 300px;
+    width: 297.5px;
+    height: 380px;
+    text-align: center;
 }
+.proposition-des-4-Activités .card3{
+align-content: center;
+}
+
 .proposition-des-4-Activités img {
-/*    height: 136px;
-    width: 439px;
-*/
+    height: 136px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.proposition-des-4-Activités .card3 {
-    display: flex;
-    flex-direction: row;
-   
-    width: 1230px;
-    height: fit-content;
+.card3 img {
+    object-fit: cover;
 }
-
 .Activities-in-town .proposition-des-4-Activités{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 'fit-content';
 }
+/*
+.proposition-des-4-Activités .card3 {
+}
+*/
 
-/* */
+/*
+.proposition-des-4-Activités a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+}
+ */
 
 /****** footer ***********/
 .bas-de-page {
