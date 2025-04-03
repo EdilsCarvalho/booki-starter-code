@@ -174,7 +174,7 @@ body {
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    height: 1500px;
+    height: 100%;
 }
 
 a {
@@ -188,9 +188,9 @@ a {
     font-size: 22px;
     display: flex;
 }
-p {
+.phrase-Accroche-Research-section {
     padding: 0;
-    margin-top: 0%;
+    margin-top: 6.9px;
 }
 h3{
     font-size: 18px;
@@ -326,6 +326,8 @@ h3{
     background-color: green;
     gap: 30px;
     padding: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 30px;
 }
 .proposition-des-4-Activités {
     display: flex;
@@ -414,6 +416,22 @@ text-align: left;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+/* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
+.proposition-des-4-Activités {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:min-content;
+    width:auto;
+    flex-wrap: wrap;
+}
+
+.bas-de-page {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+
 }
 
 /* Small devices (phones, less than 768px) */
