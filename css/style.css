@@ -389,52 +389,56 @@ text-align: left;
     .hebergements-and-populaires {
         flex-direction: column;
     }
-
     .hebergements {
         width: 100%;
     }
-
     .populaires {
         width: 100%;
         margin-top: 50px;
     }
-
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-
     .populaires-cards a {
         width: 30%;
     }
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
-
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
 /* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
-.proposition-des-4-Activités {
+    .proposition-des-4-Activités {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height:min-content;
     width:auto;
     flex-wrap: wrap;
+    gap: 30px;
+    }
+/* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
+.card3{
+    width: 193.5px;
+    height: 270px;
 }
-
 .bas-de-page {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-
+    width: 100%;
+}
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .proposition-des-4-Activités {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergements .proposition-des-6-hebergements .Par-ligne-de-3-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PAR-L... DANS HEBERGEMENTS*/
+        display: flex;
+        flex-direction: column;
+    }
 }
