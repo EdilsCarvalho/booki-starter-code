@@ -31,8 +31,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 260px;
+    height: 100%;
     gap: 20px;
+    background-color: yellow;
 }
 
 /*titre*/
@@ -68,8 +69,8 @@
 
 /*button*/
 .search-bar button {
-    width: 132;
-    height: 49;
+    width: 132px;
+    height: 49px;
     gap: 10px;
     padding-top: 15px;
     padding-right: 16px;
@@ -86,7 +87,7 @@
 .Filter-bar {
     display: flex;
     flex-direction: row;
-    /*    background-color: green; */
+    background-color: green; 
     align-items: center;
     height: 10%;
     width: 20px;
@@ -287,7 +288,7 @@ h3{
     background-color: yellow;
     border-radius: 20px;
     padding-bottom: 15px;
-    width: 250.3px;
+    width: 200px;
     height: 207.25px;
 }
 .card2 img{ /*Volonté de charger toutes les propriétés associés à l'image dans cette partie pour distinguer de la section "populaire" afin de constater que le resultat reste le meme. Y a t il un meilleur que l'autre?*/
@@ -303,20 +304,24 @@ h3{
     margin-left: 5%;
 }
 .hebergements .proposition-des-6-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PROPO... DANS HEBERGEMENTS*/
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 30px;
-
 }
 .hebergements .Par-ligne-de-3-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PAR-L... DANS HEBERGEMENTS*/
     display: flex;
     flex-direction: row;
     gap: 30px;
+    width: 50%;
+    flex-wrap: nowrap;
 }
 .hebergements .card2 {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    width: 100%;
 }
 /****** Activities_in-town ***********/
 .Activities-in-town {
@@ -377,8 +382,8 @@ text-align: left;
     flex-direction: row;
     justify-content: space-around;
     background-color: #F2F2F2;
-    width: 1340px;
-    height: 163px;
+    width: 1340px; /*convertir les ratios en pourcentage*/
+    height: 163px; /*convertir les ratios en pourcentage*/
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -415,10 +420,8 @@ text-align: left;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height:min-content;
-    width:auto;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30;
     }
 /* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
 .card3{
@@ -431,14 +434,50 @@ text-align: left;
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) {  /*MODE MOBILE A EVITER DE GARDER LE CURSEUR */
     /* ... */
     .proposition-des-4-Activités {
         display: flex;
         flex-direction: column;
+        align-items: center; 
+        gap: 30px;
     }
     .hebergements .proposition-des-6-hebergements .Par-ligne-de-3-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PAR-L... DANS HEBERGEMENTS*/
         display: flex;
         flex-direction: column;
     }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .populaires-cards img {
+        display: flex;
+        flex-direction: column;
+    }
+    .bas-de-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 100%;
+    }
+    .Filter-bar {
+        display: flex;
+        flex-direction: column;
+        height: 25%;
+        width: 0%;
+        margin-left: 0%;
+        align-items: flex-start;
+
+    }
+    .Research-section {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%;
+    }
+
 }
