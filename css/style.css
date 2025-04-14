@@ -7,7 +7,7 @@
     /*background-color: yellow;*/
 }
 .app-bar img {
-    width: 61.089656829833984px;
+    width: 381.75%;/*61.089656829833984px;  4.24%;*/
     height: 19px;
 }
 
@@ -51,13 +51,13 @@
 
 /*image*/
 .search-bar img {
-    height: 48px;
-    width: 50px
+    height: 100%;
+    width: 3.73%;
 }
 
 /*input*/
 .search-bar input {
-    width: 195px;
+    width: 227px;
     height: 42px;
     color: black;
     font-weight: 700;
@@ -283,46 +283,45 @@ h3{
     justify-content: space-between;
     gap: 30px;
 }
-
 .card2 {
     background-color: yellow;
     border-radius: 20px;
-    padding-bottom: 15px;
-    width: 200px;
-    height: 207.25px;
 }
 .card2 img{ /*Volonté de charger toutes les propriétés associés à l'image dans cette partie pour distinguer de la section "populaire" afin de constater que le resultat reste le meme. Y a t il un meilleur que l'autre?*/
-    width: 97%;
+    object-fit: cover;
     height: 50%;
+    width: 97.7%;
+    display: flex;
+    justify-content: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
-    border: 5px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
 }
-
 .card2 .card-content{
     margin-left: 5%;
 }
-.hebergements .proposition-des-6-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PROPO... DANS HEBERGEMENTS*/
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 30px;
-}
-.hebergements .Par-ligne-de-3-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PAR-L... DANS HEBERGEMENTS*/
+
+.hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    width: 50%;
-    flex-wrap: nowrap;
-}
-.hebergements .card2 {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
-    display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
+    gap: 30px;
+    height: 55%;
 }
+.Par-ligne-de-3-hebergements a{/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+    width: 31%;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hebergements .proposition-des-6-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
 /****** Activities_in-town ***********/
 .Activities-in-town {
     border-radius: 20px;
@@ -476,8 +475,17 @@ text-align: left;
         display: flex;
         flex-direction: column;
 
-        height: 100%;
-        width: 100%;
     }
-
+    .search-bar button {
+        display: none;
+        width: 17px;
+    }
+    .search-icon {
+        display:block;
+        background-color: #0065FC;
+        color: #ffff;
+        border-radius: 15px;
+        padding: 15px;
+    }
+        
 }
