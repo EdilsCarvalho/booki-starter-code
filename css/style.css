@@ -12,8 +12,7 @@
 }
 
 .app-bar-nav {
-    width: 17%;
-    display: flex;
+    display:flex;
     justify-content: space-around;
     gap: 30px;
 }
@@ -30,8 +29,8 @@
 .Research-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     gap: 20px;
     background-color: yellow;
 }
@@ -51,8 +50,8 @@
 
 /*image*/
 .search-bar img {
-    height: 100%;
-    width: 3.73%;
+    height: 50px;
+    width: 50px;
 }
 
 /*input*/
@@ -71,11 +70,6 @@
 .search-bar button {
     width: 132px;
     height: 49px;
-    gap: 10px;
-    padding-top: 15px;
-    padding-right: 16px;
-    padding-bottom: 15px;
-    padding-left: 16px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-width: 1px;
@@ -89,16 +83,14 @@
     flex-direction: row;
     background-color: green; 
     align-items: center;
-    height: 10%;
-    width: 20px;
+    width: fit-content;
     gap: 20px;
-    padding-top: 2px;
-    padding-right: 80%;
-    padding-bottom: 4px;
-    padding-left: 5px;
-    border-radius: 70px;
 }
-
+.Research-section .Filter-bar{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
 /*divers filtres*/
 .Filtre1234 {
     display: flex;
@@ -106,7 +98,7 @@
     align-items: center;
     width: auto;
     height: 30px;
-    max-height: 5Opx;
+    max-height: 50px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 19px;
@@ -175,7 +167,7 @@ body {
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
 }
 
 a {
@@ -308,7 +300,7 @@ h3{
     gap: 30px;
     height: 55%;
 }
-.Par-ligne-de-3-hebergements a{/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+.Par-ligne-de-3-hebergements a {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
     width: 31%;
     height: 230px;
     display: flex;
@@ -324,13 +316,14 @@ h3{
 
 /****** Activities_in-town ***********/
 .Activities-in-town {
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     background-color: green;
+    border-radius: 20px;
+    height: auto;
     gap: 30px;
     padding: 30px;
-    border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 .proposition-des-4-Activités {
@@ -343,36 +336,27 @@ h3{
     border-radius: 20px;
     width: 297.5px;
     height: 439px;
-    text-align: left;
 }
 .card3 img {
     object-fit: cover;
-    /* height: 86.56%; de maniere générale mais j'ai insisté à le mettre directement dans l'application à .proposition-des-4-activités */
-    /*width: 100%; /* de maniere générale mais j'ai insisté à le mettre directement dans l'application à .proposition-des-4-activités */
-}
-/*
-.card3 .card-title{
-    text-align:left;
-    margin-left: 5%;
-    height: 13.44%; de maniere générale mais j'ai insisté à le mettre directement dans l'application à .proposition-des-4-activités
-    width: 100%; de maniere générale mais j'ai insisté à le mettre directement dans l'application à .proposition-des-4-activités 
-}
- */
-    
-/*.proposition-des-4-Activités .card3 {
-text-align: left;
-} */
-
-.proposition-des-4-Activités img {
     height: 86.56%;
     width: 100%;
-    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
-.proposition-des-4-Activités .card-title {
+.card3 .card-title{
+    /*text-align:left;*/
+    padding-left: 19px;
     height: 13.44%;
     width: 100%;
-    padding-left: 19px;
+}
+.proposition-des-4-Activités a {
+    display: flex;
+    flex-direction: row;
+    width: 23%;
+    height: 40%;
+    gap: 30px;
+
 }
 
 /****** footer ***********/
@@ -381,8 +365,7 @@ text-align: left;
     flex-direction: row;
     justify-content: space-around;
     background-color: #F2F2F2;
-    width: 1340px; /*convertir les ratios en pourcentage*/
-    height: 163px; /*convertir les ratios en pourcentage*/
+    width: auto;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -390,6 +373,12 @@ text-align: left;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .app-bar-nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -415,36 +404,40 @@ text-align: left;
         font-size: 13px;
     }
 /* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
-    .proposition-des-4-Activités {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30;
+    .proposition-des-4-Activités .card3{
+        width: 100%;
     }
-/* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
-.card3{
-    width: 193.5px;
-    height: 270px;
-}
-.bas-de-page {
-    width: 100%;
-}
+    .bas-de-page {
+        width: 100%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {  /*MODE MOBILE A EVITER DE GARDER LE CURSEUR */
+    
+    
+  /* Header */
+
+    .app-bar {
+        display: flex;
+        flex-direction: column;
+        height: 115px;
+        }
+
+    .app-bar-nav a {
+        width: 50%;
+        justify-content: center;
+    }
+    .app-bar-nav a:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+    .app-bar img {
+        width: 61.089656829833984px;
+        height: 19px;
+    }
+
     /* ... */
-    .proposition-des-4-Activités {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        gap: 30px;
-    }
-    .hebergements .proposition-des-6-hebergements .Par-ligne-de-3-hebergements { /*COMMENT EST REPARTI LE CONTENU DE PAR-L... DANS HEBERGEMENTS*/
-        display: flex;
-        flex-direction: column;
-    }
     .populaires-cards {
         display: flex;
         flex-direction: column;
@@ -459,22 +452,18 @@ text-align: left;
         flex-direction: column;
         justify-content: space-around;
         background-color: #F2F2F2;
-        width: 100%;
-        height: 100%;
     }
     .Filter-bar {
         display: flex;
-        flex-direction: column;
-        height: 25%;
-        width: 0%;
-        margin-left: 0%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
         align-items: flex-start;
-
     }
     .Research-section {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
     }
     .search-bar button {
         display: none;
@@ -487,5 +476,42 @@ text-align: left;
         border-radius: 15px;
         padding: 15px;
     }
-        
+
+    .populaires-cards a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .Par-ligne-de-3-hebergements a {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+        width: auto;
+        height: auto;
+    }
+
+    .proposition-des-4-Activités {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+    .proposition-des-4-Activités a {
+        width: auto;
+    }
+    .card3 img{
+    width: 100%;
+    }
 }
