@@ -80,17 +80,20 @@
 /*Filtre*/
 .Filter-bar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: green; 
     align-items: center;
     width: fit-content;
     gap: 20px;
 }
-.Research-section .Filter-bar{
+
+.filter-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: auto;
 }
+
 /*divers filtres*/
 .Filtre1234 {
     display: flex;
@@ -116,6 +119,9 @@
     background-color: red;
 }
 
+.search-icon{
+    display: none;
+}
 /*Info complementaire concernant la Recherche*/
 .search-information {
     display: flex;
@@ -465,12 +471,22 @@ h3{
         flex-direction: column;
         align-items: center;
     }
+    .Research-section a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .Research-section .Filter-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .search-bar button {
         display: none;
         width: 17px;
     }
     .search-icon {
-        display:block;
+        display: block;
         background-color: #0065FC;
         color: #ffff;
         border-radius: 15px;
@@ -484,14 +500,22 @@ h3{
         width: auto;
     }
 
-    .hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+    .hebergements .proposition-des-6-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
     }
 
-    .Par-ligne-de-3-hebergements a {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+    .hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+        width: auto;
+        height: auto;
+    }
+    .hebergements a {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
