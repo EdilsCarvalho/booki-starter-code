@@ -501,35 +501,18 @@ h3{
         justify-content: space-between;
         width: auto;
     }
-    .hebergements .proposition-des-6-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+    .proposition-des-6-hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
         height: auto;
-    }
-    .hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 30px;
-        width: auto;
-        height: auto;
-    }
-    .hebergements a {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: 30px;
-        width: auto;
-        height: 335px;
+        width: 320%;
     }
     .proposition-des-4-Activités {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         width: 100%;
         gap: 30px;
     }
