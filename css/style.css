@@ -82,9 +82,8 @@
     display: flex;
     flex-direction: column;
     background-color: green; 
-    align-items: center;
+    align-items: flex-start;
     width: fit-content;
-    gap: 20px;
 }
 
 .filter-container {
@@ -92,6 +91,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
+    gap: 30px;
 }
 
 /*divers filtres*/
@@ -355,6 +355,7 @@ h3{
     padding-left: 19px;
     height: 13.44%;
     width: 100%;
+    
 }
 .proposition-des-4-Activités a {
     display: flex;
@@ -412,7 +413,9 @@ h3{
 /* CONCERNE LA PARTIE ACTIVITIES IN TOWN */
     .proposition-des-4-Activités .card3{
         width: 100%;
+        height: 194px;
     }
+
     .bas-de-page {
         width: 100%;
     }
@@ -492,25 +495,24 @@ h3{
         border-radius: 15px;
         padding: 15px;
     }
-
     .populaires-cards a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: auto;
     }
-
     .hebergements .proposition-des-6-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
+        height: auto;
     }
-
     .hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: space-between;
         gap: 30px;
         width: auto;
         height: auto;
@@ -521,9 +523,8 @@ h3{
         flex-direction: column;
         gap: 30px;
         width: auto;
-        height: auto;
+        height: 335px;
     }
-
     .proposition-des-4-Activités {
         display: flex;
         flex-direction: column;
@@ -534,6 +535,7 @@ h3{
     }
     .proposition-des-4-Activités a {
         width: auto;
+        min-width: 251px;
     }
     .card3 img{
     width: 100%;
