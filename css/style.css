@@ -33,6 +33,7 @@
     height: auto;
     gap: 20px;
     background-color: yellow;
+    margin-left: 27px;
 }
 
 /*titre*/
@@ -229,6 +230,7 @@ h3{
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    order: 1;
 }
 .populaires-title {
     display: flex;
@@ -441,7 +443,13 @@ h3{
         width: 61.089656829833984px;
         height: 19px;
     }
-
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        gap: 30px;
+    }
     /* ... */
     .populaires-cards {
         display: flex;
@@ -497,13 +505,24 @@ h3{
         justify-content: space-between;
         width: auto;
     }
-    .proposition-des-6-hebergements .Par-ligne-de-3-hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+    .hebergements {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
         height: auto;
-        width: 320%;
+        order: 2;
+    }
+    .hebergements-cards {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        width: auto;
+    }
+    .hebergements-cards a {/*COMMENT EST REPARTI LE CONTENU DE CARD2 DANS HEBERGEMENTS*/
+        width: 100%;
     }
     .proposition-des-4-Activités {
         display: flex;
