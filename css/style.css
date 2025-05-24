@@ -32,7 +32,7 @@
     width: auto;
     height: auto;
     gap: 20px;
-    background-color: yellow;
+
 }
 
 /*titre*/
@@ -80,7 +80,6 @@
 .filter-bar {
     display: flex;
     flex-direction: column;
-    background-color: green; 
     align-items: flex-start;
     width: fit-content;
 }
@@ -105,8 +104,8 @@
 
 .filter-bar a:hover{
     color: var(--main-color);
-    border-top: 2px solid var(--main-color);
-    background-color: red;
+    background-color: var(--filter-bg-color);
+    border-radius: 15px;
 }
 
 .search-icon{
@@ -159,7 +158,6 @@ body {
 }
 /*MAIN GAP INTERVENTION EDILSON*/
 .main {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -272,7 +270,6 @@ h3{
     gap: 30px;
 }
 .card2 {
-    background-color: yellow;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -316,7 +313,6 @@ border-top-left-radius: 20px;
 .Activities-in-town {
     display: flex;
     flex-direction: column;
-    background-color: green;
     border-radius: 20px;
     height: auto;
     gap: 30px;
@@ -466,6 +462,7 @@ border-top-left-radius: 20px;
         border-bottom-right-radius: 6px;
         border-top-right-radius: 6px;
         padding: 15px;
+        height: 18px;
     }
     .filter-container {
         flex-wrap: wrap;
